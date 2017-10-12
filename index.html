@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Jukebox</title>
-<link rel="stylesheet" href="index.css">
-</script>
-</head>
-<body>
-	Jukebox Starter Kit Workshop
-	<!-- <a href="openjukebox('audio/Footloose.mp3', 'jukebox', 'toolbar=0, location=0, directories=0,)">Start the Jukebox</a> -->
-	<div id="audio">
-		<ol>
-			<li>Foot Loose<audio src="audio/Footloose.mp3" type ="song/mp4"></audio></li>
-			<li>Best Day Of My Life<audio src="audio/Best_Day_of_My_Life.mp3" type ="song/mp4"></audio></li>
-			<li>Happy
-		<audio src="audio/Happy.mp3" type ="song/mp4"></audio></li>
-		</ol>
-	</div>
-	<div id="button_bar">
-		<button id="play">play/pause</button>
-		<button id="stop">stop</button>
-	</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jukebox</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		Jukebox 
+		<!-- <a href="openjukebox('audio/Footloose.mp3', 'jukebox', 'toolbar=0, location=0, directories=0,)">Start the Jukebox</a> -->
+		<div id="list">
+			<ol>
+				<li>Foot Loose<audio src="audio/Footloose.mp3"></audio></li>
+				<li>Best Day Of My Life<audio src="audio/Best_Day_of_My_Life.mp3"></audio></li>
+				<li>Happy
+			<audio src="audio/Happy.mp3"></audio></li>
+			</ol>
+		</div>
+		<div id="button_bar">
+			<button id="play">&gt;</button>
+			<button id="stop">[]</button>
+		</div>
 
-<script src="index.js"></script>
-</body>
+		<script src="index.js"></script>
+	</body>
 </html>
