@@ -1,0 +1,43 @@
+class Library {
+	constructor() {
+		this.books = [];
+	}
+
+	addBooks(book) {
+		this.books.push(book);
+	}
+
+	bookList(list){
+		var list = '';
+		for (var i = 0; i < this.books.length; i++) {
+			list = list + ' - ' + this.books[i].title;
+		}
+		return list;
+	}
+
+	removesBook(title) {
+		for (var i = 0; i < this.books.length; i++) {
+			if (this.books[i].title === title) {
+				this.books.splice(i, 1);
+			}
+		}
+	}
+
+	countsBooks() {
+		
+		for (var i = 0; i < this.books.length; i++) {
+		}
+		return this.books.length;
+	}
+}
+
+class Books {
+	constructor(title, author, genre) {
+	this.title = title;
+	this.author = author;
+	this.genre = genre;
+
+	}	
+}
+
+var library = new Library();
