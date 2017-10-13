@@ -14,19 +14,26 @@ class JukeBox {
 		this.audio.play();
 	}
 
-	stopSong() {
+	pause() {
 		this.audio.pause();
+	}
+	
+	stopSong() {
+		this.audio.load();
 	}
 
 	loadSong(loadSong) {
-		this.audio.setAttribute('src', loadSong);
+		this.audio.setAttribute('src', loadSong;
 	}
 }
-
 
 var playlist = new JukeBox();
 
 // addEventListeners added here
+
+playlist.loadSong('audio/Happy.mp3');
+playlist.loadSong('audio/Best_Day_of_My_Life.mp3');
+playlist.loadSong('audio/Footloose.mp3');
 
 document.getElementById('play').addEventListener('click', function(){
 	playlist.playSong();
@@ -39,21 +46,27 @@ document.getElementById('play').addEventListener('click', function(){
 		// }
 });
 
+document.getElementById('pause').addEventListener('click', function(){
+	playlist.pause();
+})
+
 document.getElementById('stop').addEventListener('click', function(){
 	playlist.stopSong();
 })
 
+// click on text and song plays
 
+document.getElementById('fl').addEventListener('click', function (){
+	playlist.playSong();
+});
 
-document.getElementById('list').addEventListener('click', function(){
-playlist.loadSong('audio/Happy.mp3');
-playlist.loadSong('audio/Best_Day_of_My_Life.mp3');
-playlist.loadSong('audio/Footloose.mp3');	
-})
+document.getElementById('bd').addEventListener('click', function (){
+	playlist.playSong();
+});
 
+document.getElementById('hpy').addEventListener('click', function (){
+	playlist.playSong();
+});
 
-playlist.loadSong('audio/Happy.mp3');
-playlist.loadSong('audio/Best_Day_of_My_Life.mp3');
-playlist.loadSong('audio/Footloose.mp3');
 
 
