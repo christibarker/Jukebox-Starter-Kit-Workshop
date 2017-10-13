@@ -23,7 +23,7 @@ class JukeBox {
 	}
 
 	loadSong(loadSong) {
-		this.audio.setAttribute('src', loadSong;
+		this.audio.setAttribute('src', loadSong);
 	}
 }
 
