@@ -1,12 +1,32 @@
 body {
-	display: inline-block;
-	top:20%;
+	background-image: url(http://24.media.tumblr.com/tumblr_lr6mckpOjS1r17o03o1_500.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto: 
 }
 
 ul {
 	list-style-type: none;
 }
 
-h1:hoover {
-	color:blue;
-}g
+
+img {
+	height: 200px;
+	widows: 200px;
+	border-radius: 15px;
+	border: 3px double brown;
+	padding: 5px;
+	margin-left: 7%;
+	margin-bottom: 1%;
+
+}
+
+#button_bar {
+	padding: 18px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: brown;
+}

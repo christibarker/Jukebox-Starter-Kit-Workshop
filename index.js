@@ -24,6 +24,7 @@ class JukeBox {
 
 	loadSong(loadSong) {
 		this.audio.setAttribute('src', loadSong);
+		this.playSong();
 	}
 }
 
@@ -57,15 +58,18 @@ document.getElementById('stop').addEventListener('click', function(){
 // click on text and song plays
 
 document.getElementById('fl').addEventListener('click', function (){
-	playlist.playSong();
+	var song = 'audio/Footloose.mp3';
+	playlist.loadSong(song);
 });
 
 document.getElementById('bd').addEventListener('click', function (){
-	playlist.playSong();
+	var song = 'audio/Best_Day_of_My_Life.mp3';
+	playlist.loadSong(song);
 });
 
 document.getElementById('hpy').addEventListener('click', function (){
-	playlist.playSong();
+	var song = 'audio/Happy.mp3';
+	playlist.loadSong(song);
 });
 
 
