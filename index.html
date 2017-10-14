@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Jukebox</title>
-<link rel="stylesheet" href="index.css">
-</head>
-<body>
-	Jukebox Starter Kit Workshop
+	<head>
+		<meta charset="UTF-8">
+		<title>Jukebox</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1>Jukebox Oldies</h1>
+		<!-- <a href="openjukebox('audio/Footloose.mp3', 'jukebox', 'toolbar=0, location=0, directories=0,)">Start the Jukebox</a> -->
+		<div id="button_bar">
+			<button id="play">&gt;</button>
+			<button id="pause">||</button>
+			<button id="stop">[]</button>
+		</div>
+		<div id="list">
+				<div>
+					<div data-song="audio/Footloose.mp3"></div>
+					<audio src="audio/Footloose.mp3"></audio>
+					<img Id="fl" src="https://tinselblog.files.wordpress.com/2012/02/footloose-dvd-duo-2d.jpg" alt="">
+				</div>
+				<div>
+					<div data-song="audio/Best_Day_of_My_Life.mp3"></div>
+					<audio src="audio/Best_Day_of_My_Life.mp3"></audio>
+					<img Id="bd" src="http://www.goodnet.org/photos/620x0/20622.jpg" alt="">
+				</div>
+					<div>
+					<div data-song="audio/Happy.mp3"></div>
+					<audio src="audio/Happy.mp3"></audio>
+					<img Id="hpy" src="https://missananda.files.wordpress.com/2014/02/happy-song.jpg" alt="">
+				</div>
+			</ul>
+		</div>
+		
 
-<script src="index.js"></script>
-</body>
+		<script src="index.js"></script>
+	</body>
 </html>
